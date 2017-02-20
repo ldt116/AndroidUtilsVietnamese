@@ -1,8 +1,29 @@
 apply plugin: 'java'
 
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = ' AndroidUtilsVietnamese'
+
+    publishedGroupId = 'me.timos.thuanle'
+    libraryName = 'AndroidUtilsVietnamese'
+    artifact = 'android-utils-vietnamese'
+
+    libraryDescription = 'An Android Utilties for Vietnamese'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'ldt116'
+    developerName = 'Thuan Le'
+    developerEmail = 'ldt116@gmail.com'
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
