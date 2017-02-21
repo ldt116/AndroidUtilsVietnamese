@@ -3,7 +3,7 @@ apply plugin: 'java'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = ' AndroidUtilsVietnamese'
+    bintrayName = 'AndroidUtilsVietnamese'
 
     publishedGroupId = 'me.timos.thuanle'
     libraryName = 'AndroidUtilsVietnamese'
@@ -11,11 +11,18 @@ ext {
 
     libraryDescription = 'An Android Utilties for Vietnamese'
 
+    siteUrl = 'https://github.com/ldt116/AndroidUtilsVietnamese'
+    gitUrl = 'git@github.com:ldt116/AndroidUtilsVietnamese'
+
     libraryVersion = '1.0.0'
 
     developerId = 'ldt116'
     developerName = 'Thuan Le'
     developerEmail = 'ldt116@gmail.com'
+
+    licenseName = 'MIT License'
+    licenseUrl = 'https://github.com/ldt116/FBNativeAdAdapter/blob/master/LICENSE'
+    allLicenses = ["MIT License"]
 }
 
 dependencies {
